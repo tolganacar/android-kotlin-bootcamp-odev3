@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipElectricCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/electricCars"
+        android:textColor="@color/yaziRenk3"
+        android:textSize="24sp"
+        app:chipBackgroundColor="@color/anaRenk"
+        app:chipStrokeColor="@color/anaRenk"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipSportsCar"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/anaRenk"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="?attr/actionBarTheme"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textViewTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="@font/audiowide"
+            android:text="naCAR"
+            android:textColor="@color/yaziRenk3"
+            android:textSize="26sp"
+            tools:layout_editor_absoluteX="167dp"
+            tools:layout_editor_absoluteY="14dp" />
+    </androidx.appcompat.widget.Toolbar>
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewPorsche"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#F2F2F2"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/chipAllCars">
+
+        <ImageView
+            android:id="@+id/imageViewPorsche"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:src="@drawable/porsche" />
+
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewPorsche"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Porsche Taycan"
+        android:textColor="@color/yaziRenk1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/cardViewPorsche"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewPorsche" />
+
+    <TextView
+        android:id="@+id/textViewPorschePrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/starting50000"
+        android:textColor="@color/yaziRenk2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewPorsche"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorsche" />
+
+    <TextView
+        android:id="@+id/textViewPorscheSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="@string/seeMore"
+        android:textColor="@color/anaRenk"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewPorsche"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewPorsche" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardViewFerrari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="32dp"
+        android:backgroundTint="#F2F2F2"
+        app:cardCornerRadius="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewPorschePrice">
+
+        <ImageView
+            android:id="@+id/imageViewFerrari"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F2F2F2"
+            android:src="@drawable/ferrari" />
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewFerrari"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="Ferrari 458"
+        android:textColor="@color/yaziRenk1"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@+id/cardViewFerrari"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewFerrari" />
+
+    <TextView
+        android:id="@+id/textViewFerrariPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="serif"
+        android:text="@string/starting70000"
+        android:textColor="@color/yaziRenk2"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/textViewFerrari"
+        app:layout_constraintTop_toBottomOf="@+id/textViewFerrari" />
+
+    <TextView
+        android:id="@+id/textViewFerrariSeeMore"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:fontFamily="serif"
+        android:text="@string/seeMore"
+        android:textColor="@color/anaRenk"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/cardViewFerrari"
+        app:layout_constraintTop_toBottomOf="@+id/cardViewFerrari" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipAllCars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/allCars"
+        android:textColor="@color/yaziRenk3"
+        android:textSize="24sp"
+        app:chipBackgroundColor="@color/anaRenk"
+        app:chipStrokeColor="@color/anaRenk"
+        app:layout_constraintEnd_toStartOf="@+id/chipSportsCar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+
+    <com.google.android.material.chip.Chip
+        android:id="@+id/chipSportsCar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/sportsCars"
+        android:textColor="@color/yaziRenk3"
+        android:textSize="24sp"
+        app:chipBackgroundColor="@color/anaRenk"
+        app:chipStrokeColor="@color/anaRenk"
+        app:layout_constraintEnd_toStartOf="@+id/chipElectricCar"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/chipAllCars"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar" />
+</androidx.constraintlayout.widget.ConstraintLayout>

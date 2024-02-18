@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">naCAR</string>
+    <string name="findTheBestCar">Sizin için en iyi arabayı bulun</string>
+    <string name="allCars">Tüm Arabalar</string>
+    <string name="sportsCars">Spor Arabalar</string>
+    <string name="suvCars">SUV\'lar</string>
+    <string name="electricCars">Elektrikli Arabalar</string>
+    <string name="seeMore">Daha fazla gör</string>
+    <string name="starting50000">$50,000 başlangıç</string>
+    <string name="starting70000">$70,000 başlangıc</string>
+</resources>

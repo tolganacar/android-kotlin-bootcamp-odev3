@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">naCAR</string>
+    <string name="findTheBestCar">Find the best car for you</string>
+    <string name="allCars">All Cars</string>
+    <string name="sportsCars">Sports Cars</string>
+    <string name="suvCars">SUVs</string>
+    <string name="electricCars">Electric Cars</string>
+    <string name="seeMore">See More</string>
+    <string name="starting50000">$50,000 starting</string>
+    <string name="starting70000">$70,000 starting</string>
+</resources>
